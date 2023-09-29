@@ -1,20 +1,8 @@
-<h1>List of Users</h1>
+<h1>Welcome to the Blog App!</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Posts Counter</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.id %></td>
-        <td><%= user.name %></td>
-        <td><%= user.posts_counter %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<section class='user_cards'>
+  <h2>All users</h2>
+  <% @users.each do |user| %>
+    <%= render partial: 'shared/user_card', locals: { user: user } %>
+  <% end %>
+</section>
