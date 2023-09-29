@@ -1,5 +1,5 @@
 <article class='post_card'>
-  <h3 class='post_title'><%= post.title %> </h3>
+  <h3 class='post_title'><%= link_to post.title, user_post_path(user_id: post.author.id, id: post.id) %> </h3>
   <p class='post_text'><%= truncate(post.text, length: 250, omission: "...") %></p>
   <div class='post_stats'>
     <p>Comments: <%= post.comments_counter || 0 %></p>
