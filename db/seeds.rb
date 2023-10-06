@@ -7,17 +7,20 @@ user_1 = User.create(name: 'Lawrence McDaniel',
 	photo: 'https://cdn.filestackcontent.com/e59vmdzRKGVwdjNKKLy0', 
 	bio: 
 		%{Lawrence McDaniel is an American full stack developer with significant experience with classic backend stacks and front-end frameworks including Django, React, Angular, and WordPress. He also work extensively with the Open edX learning management system. A curated collection of technical how-to articles written by Lawrence McDaniel for AWS, Python, Django, Open edX, and WordPress.},
-	posts_counter: 0)
+	email: 'law@email.com',
+	password: 'l1232456')
 user_2 = User.create(name: 'Nick Janetakis',
 	photo: 'https://yt3.googleusercontent.com/ytc/AGIKgqNOkQifJxJFApzSI618fOq3H9xfByIPZzxYUSjtDA=s900-c-k-c0x00ffffff-no-rj',
 	bio:
 		%{Nich Janetakis a full-stack developer and teacher who focuses on building and deploying web apps. Take a look at his blog or courses. If he is not building or deploying web apps, then he is writing about what he have learned along the way in his blog. From development to production you will get all the information there.},
-	posts_counter: 0)
+	email: 'nick@email.com',
+	password: 'n1232456')
 user_3 = User.create(name: 'Wes Bos',
 	photo: 'https://miro.medium.com/v2/resize:fit:2400/0*aEfbQnQjpV7YOzbs.jpeg',
 	bio:
 		%{Wes Bos is a web developer, teacher and speaker from Hamilton, Ontario. He uses HTML, CSS and JavaScript. Though constantly changing, his focus right now he is using React.js, Node, Express, Lambda, Gatsby and Next.js.},
-	posts_counter: 0)
+	email: 'wes@email.com',
+	password: 'w1232456')
 
 # Create at least 4 Posts
 post_1 = Post.create(author: user_1,
