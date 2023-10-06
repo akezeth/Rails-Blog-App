@@ -60,3 +60,18 @@ a:active {
 .back_btn {
   text-decoration: underline;
 }
+
+.nav {
+  background-color: #e9e2e2;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 18px;
+  margin: 2rem;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.nav a {
+  margin-right: 20px;
+}
