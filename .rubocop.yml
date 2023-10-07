@@ -27,7 +27,9 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   AllowedMethods: ['describe']
   Max: 30
-
+  
+Layout/EndOfLine:
+  EnforcedStyle: lf
 Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
