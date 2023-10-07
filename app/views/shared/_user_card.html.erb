@@ -1,5 +1,10 @@
 <article class='user_card'> 
-  <%= image_tag user.photo, :class => 'user_photo', alt: 'User photo' %>
+  <img src="<%=user.photo %>" alt: "User photo" class='user_photo' />
+  <%
+=begin%>
+ <%=image_tag user.photo, :class => 'user_photo', alt: 'User photo'%> 
+<%
+=end%>
   <div class='user_card_info'>
     <h3 class='user_name'><%= link_to user.name, user_path(user) %></h3>
     <p class='user_posts'>Number of posts: <%= user.posts.count %></p>
