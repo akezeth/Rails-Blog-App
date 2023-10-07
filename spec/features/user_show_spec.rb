@@ -2,7 +2,7 @@ require 'rails_helper'
 RSpec.describe 'User Show Page', type: :feature do
   before(:each) do
     @user = User.create(name: 'Lawrence McDaniel', photo: 'https://cdn.filestackcontent.com/e59vmdzRKGVwdjNKKLy0',
-                        bio: 'Lawrence McDaniel is an American full stack developer.',posts_counter: 0)
+                        bio: 'Lawrence McDaniel is an American full stack developer.', posts_counter: 0)
     @post1 = Post.create(author: @user, title: 'WordPress oAuth Provider for Open edX',
                          text: 'I’m a big advocate of leveraging WordPress as a marketing front end for Open edX',
                          comments_counter: 0,
@@ -12,8 +12,8 @@ RSpec.describe 'User Show Page', type: :feature do
                          comments_counter: 0,
                          likes_counter: 0)
     @post3 = Post.create(author: @user, title: 'Flask Nested Blueprints Example', text: 'This is my third post.',
-    comments_counter: 0,
-    likes_counter: 0)
+                         comments_counter: 0,
+                         likes_counter: 0)
   end
   describe 'Page Content Testing' do
     before(:each) do

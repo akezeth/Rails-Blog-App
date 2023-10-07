@@ -3,8 +3,8 @@ RSpec.describe 'Post Show Page', type: :feature do
   describe 'Viewing Post Show page' do
     before(:each) do
       @user = User.create(name: 'Lawrence McDaniel', photo: 'https://cdn.filestackcontent.com/e59vmdzRKGVwdjNKKLy0',
-                          bio: 'Lawrence McDaniel is an American full stack developer.')
-      @post = Post.create(author: @user, title: 'Post 1', text: 'This is Post 1')
+                          bio: 'Lawrence McDaniel is an American full stack developer.', posts_counter: 0)
+      @post = Post.create(author: @user, title: 'Post 1', text: 'This is Post 1', comments_counter: 0, likes_counter: 0)
       @comment = Comment.create(post: @post, user: @user, text: 'Post 1 comment')
       visit user_post_path(@user, @post)
     end
